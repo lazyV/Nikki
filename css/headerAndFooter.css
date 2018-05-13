@@ -1,0 +1,66 @@
+.header{
+    width:100%;
+    min-height:580px;
+    background:#fff;
+    background:url("../image/hd_bar.jpg") no-repeat top center;
+}
+.header .nav{
+    height:95px;
+    width:1050px;
+    position:relative;
+    margin:0 auto;
+}
+.header .nav ul li{
+    width:100px;
+    float:left;
+    text-align:center;
+}
+.header .nav ul li:first-child{
+    width:221px;
+    height:95px;
+    margin-top:9px;
+}
+.header .nav ul li:not(:first-child){
+    margin-top:39px;
+}
+.header .nav ul li a{
+    display:inline-block;
+    font-size:17px;
+    padding:0 10px;
+}
+.header .nav ul li a:hover{
+    color:#EB8594;
+}
+.header .nav ul li a.on{
+    color: #eb2455;
+}
+
+.l_line{
+    width:5px;
+    height:20px;
+    position:absolute;
+    background-image:url("../image/sprite.png");
+    background-position:-380px -35px;
+}
+.header .bg{
+    height:475px;
+    width:100%;
+    position:absolute;
+    overflow:hidden;
+}
+
+/*footer.css*/
+#footer{
+    color:#D3BBC0;
+    background:#8c515d;
+    padding:25px;
+    overflow:hidden;
+}
+#footer a{
+    color:#fff;
+    font-size:14px;
+}
+#foo_details{
+    padding:20px 0;
+    text-align:center;
+}

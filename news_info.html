@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻资讯</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/news_info.css">
+</head>
+<body>
+<div id="header">动态加载页头</div>
+<div class="main_bd">
+    <div class="nav_title"></div>
+    <!--面包屑导航-->
+    <p class="head-route">
+        奇迹暖暖&nbsp;&nbsp;>&nbsp;&nbsp;
+        <a href="index.html" target="_self">首页</a>
+        &nbsp;&nbsp;>&nbsp;&nbsp;
+        <span>热门</span>
+    </p>
+    <div class="news_list">
+        <ul class="news_hd" id="news_hd">
+            <li class="on"><a href="javascript:;">热门</a></li>
+            <li><a href="javascript:;">新闻</a></li>
+            <li><a href="javascript:;">公告</a></li>
+            <li><a href="javascript:;">活动</a></li>
+        </ul>
+        <div id="news_bd">
+            <ul class="tab-panel dis" data-toggle="loadNews">
+                <!--<li>-->
+                    <!--<a href="#">热门 【复开通知】倾心回忆 梦恋奇迹</a>-->
+                    <!--<span>2017-10-07</span>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <div class="btn_content">
+            <a href="javascript:;"  class="up">上一页</a>
+            <a href="javascript:;"  class="down ">下一页</a>
+        </div>
+    </div>
+</div>
+<div id="footer">动态加载页尾</div>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/headerAndFooter.js"></script>
+<script src="js/news_info.js"></script>
+</body>
+</html>

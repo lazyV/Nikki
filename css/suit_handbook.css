@@ -1,0 +1,60 @@
+.main_bd .nav_title{
+    width:220px;
+    height:55px;
+    padding:5px 0;
+    background:url("../image/title.png") -4px -186px no-repeat;
+}
+.suit_hd{width:1100px;height:370px;}
+.suit_hd ul.clyList{width:100%;}
+.suit_hd ul.clyList li{float:left;width:183px;height:183px;text-align: center;line-height:183px;}
+.clyList li img{
+    width:140px;
+    margin-top:15px;
+    transform-origin:center;
+    transition: all .2s linear;
+}
+.clyList li img.on{
+    transform:scale(1.1);
+}
+.clyList li img:hover{
+    transform:scale(1.1);
+}
+.suit_bd{ width:inherit;}
+
+/*注意此处的height值会影响footer模块*/
+.suitList{ height:750px;}
+.suitList li{
+    float:left;
+    margin:11px;
+}
+.suitList li img{width:250px;display:block}
+.suitList li span{
+    display:block;
+    margin:0 auto;
+    width:135px;
+    line-height:26px;
+    border-radius:30px;
+    text-align:center;
+    background: #f7e8e2;
+}
+.suit_bd .pageBtn{
+    margin-top:20px;
+    text-align:right;
+}
+.suit_bd .pageBtn a{
+    padding:10px 18px;
+    margin:0 3px;
+    border-radius: 10px;
+    background: #f7e8e2;
+    box-shadow:1px 1px 2px #c2c1c4;
+}
+.suit_bd .pageBtn a.on{
+    background: #acd4db;
+    color:#fff;
+}
+/*注意这种警用鼠标单击事件的方法IE9不适用*/
+.disabled{
+    pointer-events:none;
+    cursor: pointer;
+    opacity:0.6;
+}

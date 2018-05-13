@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>套装详情</title>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .main_bd .nav_title{
+            width:220px;
+            height:55px;
+            padding:5px 0;
+            background:url("image/title.png") -4px -186px no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div id="header">header</div>
+<div class="main_bd">
+    <div class="nav_title"></div>
+    <!--面包屑导航-->
+    <p class="head-route">
+        奇迹暖暖&nbsp;&nbsp;>&nbsp;&nbsp;
+        <a href="index.html">首页</a>
+        &nbsp;&nbsp;>&nbsp;&nbsp;
+        <a href="suit_handbook.html">套装图鉴</a>
+        &nbsp;&nbsp;>&nbsp;&nbsp;
+        <span>动态加载</span>
+    </p>
+    <div data-toggle="details" style="width:100%;text-align:center">
+        <img src="#">
+    </div>
+</div>
+<div id="footer">动态加载页尾</div>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/headerAndFooter.js"></script>
+<script>
+    window.onload=function(){
+        var kv=window.location.search.slice(1).split("&"),
+            suitDetailMsg=new Object();
+        for(var i=0;i<kv.length;i++){
+            suitDetailMsg[kv[i].split("=")[0]]=decodeURI(kv[i].split("=")[1]);
+        }
+//        console.log(suitDetailMsg)//ok
+        $("title").html(suitDetailMsg.suitName);
+        $(".head-route span").html(suitDetailMsg.suitName);
+        $("[data-toggle=details]").children().attr("src",suitDetailMsg.detl)
+    }
+</script>
+</body>
+</html>

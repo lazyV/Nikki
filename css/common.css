@@ -1,0 +1,40 @@
+body,div,dl,dt,dd,ol,li,ul,h1,h2,h3,h4,h5,h6,pre,th,td,p{
+	margin:0;
+	padding:0;
+}
+
+ol,ul{
+	list-style:none;
+}
+table{
+	border-collapse:collapse;
+}
+a{
+	text-decoration:none;
+	color:#5F3E4F;
+}
+.hide{
+	display:none;
+	font-size:0;
+	line-height:0;
+}
+.clear{
+	clear:both;
+}
+
+body{font:normal 14px "microsoft yahei",simsun,Tahoma,sans-serif;color:#5F3E4F;background: #ffffff;min-width: 1200px;margin: 0;}
+
+body .main_bd{
+	width:1200px;
+	min-height:200px;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+/*面包屑导航部分*/
+.main_bd .head-route{
+	padding:30px 0;
+	font-size:18px;
+}
+.main_bd .head-route span{
+	color:#e47e80;
+}

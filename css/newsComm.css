@@ -1,0 +1,33 @@
+
+.main_bd p{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}
+.main_bd .nav_title{
+    width:220px;
+    height:58px;
+    padding:5px 0;
+    background:url("../image/title.png") -4px -65px no-repeat;
+}
+.hd{
+    margin:0 30px;
+}
+.hd .title{
+    display: block;
+    overflow: hidden;
+    width:100%;
+    font: 500 26px/2.5 '\5FAE\8F6F\96C5\9ED1', tahoma;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    border-bottom: 1px solid #666;
+}
+.hd .info {
+    margin-top:-25px;
+    font-size: 14px;
+    color: #666;
+}
+.context{font-size: 16px;line-height: 1.7;}
+span.red{color:red}
+p.center{width:100%;text-align:center;}

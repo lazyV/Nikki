@@ -1,0 +1,9 @@
+(()=>{
+    $.ajax({
+        method:"GET",
+        url:"commInfo.html"
+    })
+        .then(html=>{
+        $("[data-load=commInfo]").html(html);
+        });
+})();
